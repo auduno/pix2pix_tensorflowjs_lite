@@ -1,8 +1,8 @@
-const SIZE = 256, sampleNum = 7;
+const SIZE = 512, sampleNum = 7;
 let inputCanvas, outputContainer, statusMsg, transferBtn, sampleIndex = 0, modelReady = false, isTransfering = false;
 const inputImgs = [], outputImgs = [];
 
-const edges2pikachu = pix2pix('./models/edges2pikachu_AtoB.pict', modelLoaded);
+const edges2pikachu = pix2pix('./models/santa_512_20000_BtoA.pict', modelLoaded);
 
 function setup() {
   // Create canvas

@@ -52,7 +52,7 @@ class Pix2pix {
       let convolved = conv2d(preprocessedInput, filter, bias);
       layers.push(convolved);
 
-      for (let i = 2; i <= 8; i += 1) {
+      for (let i = 2; i <= 9; i += 1) {
         const scope = `generator/encoder_${i.toString()}`;
         filter = this.weights[`${scope}/conv2d/kernel`];
         const bias2 = this.weights[`${scope}/conv2d/bias`];
@@ -65,9 +65,9 @@ class Pix2pix {
         layers.push(normalized);
       }
 
-      for (let i = 8; i >= 2; i -= 1) {
+      for (let i = 9; i >= 2; i -= 1) {
         let layerInput;
-        if (i === 8) {
+        if (i === 9) {
           layerInput = layers[layers.length - 1];
         } else {
           const skipLayer = i - 1;
