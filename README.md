@@ -1,16 +1,17 @@
-# pix2pix in tensorflow.js
-See a live demo here: [https://yining1023.github.io/pix2pix_tensorflowjs_lite/](https://yining1023.github.io/pix2pix_tensorflowjs_lite/)
+# Edges2Santa pix2pix
 
-<a href="https://ibb.co/e0oUUd"><img src="images/demo.gif" alt="demo"></a>
+Pix2pix model trained to generate 512 px X 512 px santas! All credit goes to [yining1023](https://github.com/yining1023) and the original [pix2pix_tensorflowjs_lite repository](https://github.com/yining1023/pix2pix_tensorflowjs_lite), the only modifications made is training a new model, and accomodating 512 x 512 images in the code.
+
+<img src="images/screenshot.png" alt="demo">
 
 Try it yourself: Download/clone the repository and run it locally:
 ```
-$ git clone https://github.com/yining1023/pix2pix_tensorflowjs_lite.git
+$ git clone https://github.com/auduno/pix2pix_tensorflowjs_lite.git
 $ cd pix2pix_tensorflowjs_lite
 $ python -m SimpleHTTPServer
 ```
 
-
+The rest of the text in this readme is from the original readme in [pix2pix_tensorflowjs_lite repository](https://github.com/yining1023/pix2pix_tensorflowjs_lite).
 
 ## Credits: This project is based on [affinelayer](https://github.com/affinelayer)'s [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow). I want to thank [christopherhesse](https://github.com/christopherhesse), [nsthorat](https://github.com/nsthorat), and [dsmilkov](dsmilkov) for their help and suggestions from this Github [issue](https://github.com/tensorflow/tfjs/issues/79).
 
