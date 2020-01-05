@@ -1,6 +1,6 @@
-# Edges2Santa pix2pix
+# Edges2Spruce pix2pix
 
-Pix2pix model trained to generate 512 px X 512 px santas! All credit goes to [yining1023](https://github.com/yining1023) and the original [pix2pix_tensorflowjs_lite repository](https://github.com/yining1023/pix2pix_tensorflowjs_lite), the only modifications made is training a new model, and accomodating 512 x 512 images in the code.
+Pix2pix model trained to generate 512 px X 512 px spruce branches! All credit goes to [yining1023](https://github.com/yining1023) and the original [pix2pix_tensorflowjs_lite repository](https://github.com/yining1023/pix2pix_tensorflowjs_lite), the only modifications made is training a new model, and accomodating 512 x 512 images in the code.
 
 <img src="images/screenshot.png" alt="demo">
 
