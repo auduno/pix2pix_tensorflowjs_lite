@@ -70,11 +70,12 @@ const array3DToImage = (tensor) => {
 
   for (let i = 0; i < imgWidth * imgHeight; i += 1) {
     const j = i * 4;
-    const k = i * 3;
+    const k = i * 4;
     imageData.data[j + 0] = Math.floor(256 * data[k + 0]);
     imageData.data[j + 1] = Math.floor(256 * data[k + 1]);
     imageData.data[j + 2] = Math.floor(256 * data[k + 2]);
-    imageData.data[j + 3] = 255;
+    imageData.data[j + 3] = Math.floor(256 * data[k + 3]);
+    //imageData.data[j + 3] = 255;
   }
   ctx.putImageData(imageData, 0, 0);
 

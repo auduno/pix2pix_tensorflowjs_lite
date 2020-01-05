@@ -2,7 +2,8 @@ const SIZE = 512, sampleNum = 7;
 let inputCanvas, outputContainer, statusMsg, transferBtn, sampleIndex = 0, modelReady = false, isTransfering = false;
 const inputImgs = [], outputImgs = [];
 
-const edges2pikachu = pix2pix('./models/santa_512_20000_BtoA.pict', modelLoaded);
+const edges2pikachu = pix2pix('./models/lines2branch.pict', modelLoaded);
+//const edges2pikachu = pix2pix('./models/mosse_BtoA.pict', modelLoaded);
 
 function setup() {
   // Create canvas
@@ -34,6 +35,7 @@ function setup() {
 
   // Set stroke to black
   stroke(0);
+  strokeWeight(5);
   pixelDensity(1);
 }
 
@@ -91,7 +93,7 @@ function getRandomOutput() {
 
 function usePencil() {
   stroke(0);
-  strokeWeight(1);
+  strokeWeight(5);
   inputCanvas.removeClass('eraser');
   inputCanvas.addClass('pencil');
 }
